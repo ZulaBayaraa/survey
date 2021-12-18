@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+header {
+  font-family: Bradley Hand, cursive;
+  text-align: center;
+  padding: 25px;
+}
+
+p, h1 {
+  margin: 0px;
+  padding: 0px;
+}
+
+#survey-form {
+  position: relative;
+  font-family: Bradley Hand, cursive;
+  background-color: #73AF59;
+  padding: 25px;
+  margin: auto 390px;
+  border-radius: 10px;
+}
+
+h5 {
+  color: black;
+  font-size: 18px;
+}
+
+#introduction {
+  position: absolute;
+  bottom: 45px;
+  width: auto;
+  height: auto;
+}
+
+
+</style>
+
+<header>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Your unique journey to a web developer role</p>
+  </header>
+  <body>
+    <form id="survey-form">
+      <label id="name-label">Name:</label>
+        <input id="name"
+               type="name"
+               placeholder="Enter name"
+               required>
+      <label id="email-label">Email:</label>
+        <input id="email"
+               type="email"
+               placeholder="Enter email"
+               required>
+      <label id="number-label">Age:</label>
+        <input id="number"
+               type="number"
+               placeholder="Age"
+               min="1"
+               max="99"
+               required>
+       
+      <h5>Which option best describes your journey to web development?</h5>
+          <select id="dropdown">
+            <option disabled="disabled">Select option</option>
+            <option>Self-Taught</option>
+            <option>Boot Camp</option>
+            <option>Computer Science Degree</option>
+            <option>Other</option>
+        </select>
+      
+      <h5>Would you like to connect with other web developers?</h5>
+      <label for="definitely">
+        <input id="definitely"
+               name="connect"
+               value="definitely"
+               type="radio"
+               required>Definitely!</input>
+      <label for="no-thanks">
+        <input id="no-thanks"
+               name="connect"
+               value="no-thanks"
+               type="radio"
+               required>No Thanks</input>
+      <h5>Which areas of web development do you work in?</h5>
+      <label for="back-end-development">
+        <input id="back-end-development"
+               name="area-of-work"
+               type="checkbox"
+               value="back-end-development"
+               required>Back-End Development</input>
+      <label for="front-end-development">
+        <input id="front-end-development"
+               name="area-of-work"
+               type="checkbox"
+               value="front-end-development"
+               required>Front-End Development</input>
+      <label for="full-stack-development">
+        <input id="full-stack-development"
+               name="area-of-work"
+               type="checkbox"
+               value="full-stack-development"
+               required>Full-stack Development</input>
+      
+      <label for="introduction"><h5>Introduce Yourself:</h5>
+        <textarea id="introduction"
+               name="introduction">
+        </textarea>
+        <button id="submit">Sumbit</button>
+    </form>
+  </body>
+  </html>
